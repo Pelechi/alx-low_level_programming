@@ -1,10 +1,16 @@
-#ifndef MAIN_H
-#define MAIN_H
-#include <stdio.h>
+#include "main.h"
+/**
+ * positive_or_negative - checks for positive or negative numbers
+ *
+ * @i: The number to be checked
+ *
+ * Return: Always 0
+ */
 
-void positive_or_negative(int i);
-int largest_number(int a, int b, int c);
-void print_running_days(int month, int day, int year);
-int convert_days(int month, int day);
-
-#endif
+void positive_or_negative(int i)
+{
+	if (i < 0)
+		printf("%d is negative", i);
+	else
+		printf("%d is positive", i);
+}
